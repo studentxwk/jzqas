@@ -1,0 +1,281 @@
+a {
+  color: #657180 !important;
+}
+
+.header {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-bottom: 1px solid #d9d9d9;
+  background: rgb(249, 249, 249);
+}
+
+.borderTop {
+  border-top: 1px solid #d9d9d9;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.paddingClear {
+  padding: 0 !important;
+}
+
+.contractMaker {
+  background: #fff;
+  overflow: hidden;
+  .optContainer {
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  .contractHeadContainer, .contractBodyContainer {
+    overflow: hidden;
+  }
+  .formItemsContainer {
+    float: left;
+    width: 300px;
+    border-right: 1px solid #d9d9d9;
+    .formItemsContainerHeader {
+      .header;
+    }
+    .formItemsContainerBody {
+      padding: 20px;
+      text-align: left;
+      .ivu-checkbox-group-item {
+        margin-bottom: 15px;
+      }
+    }
+    .formItemsContainerFooter {
+      margin-bottom: 20px;
+    }
+    .checkAllContainer {
+      border-bottom: 1px solid #e9e9e9;
+      padding-bottom: 6px;
+      margin-bottom: 6px;
+      width: 300px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      text-align: left;
+    }
+    .classifyTitle {
+      height: 30px;
+      line-height: 30px;
+      font-size: 16px;
+      margin-top: 10px;
+      padding-bottom: 10px;
+      box-sizing: content-box;
+      border-bottom: 1px solid #e9e9e9;
+      position: relative;
+      span.classifyTab {
+        display: inline-block;
+        height: 30px;
+        width: 3px;
+        background: #2db7f5;
+        margin-right: 15px;
+        position: absolute;
+        left: 0px;
+      }
+      span.classifyName {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        position: absolute;
+        left: 20px;
+      }
+      .checkAll {
+        width: 50px;
+        float: right;
+      }
+    }
+    .classifyCb {
+      padding: 20px;
+    }
+  }
+  .contractModelsContainer {
+    margin-left: 299px;
+    border-left: 1px solid #d9d9d9;
+    .contractModelsContainerHeader {
+      .header;
+    }
+    .contractModelsContainerBody {
+      padding: 20px;
+      overflow: hidden;
+      .modelCard {
+        //width: calc(~'33% - 10px');
+        width: 100%;
+        margin-right: 10px;
+        box-sizing: border-box;
+        float: left;
+        .ivu-card-body {
+          //height: 200px;
+          //overflow-y: scroll;
+        }
+        .ivu-tag {
+          margin-bottom: 15px;
+        }
+      }
+
+      .tableCommon {
+        width: 150px;
+        float: left;
+        border: 1px solid #ccc;
+        height: 20px;
+        margin-right: -1px;
+      }
+
+      .tableContainer {
+        width: 100%;
+        overflow: auto;
+      }
+
+      .tableHeader {
+        height: 20px;
+      }
+
+      .tableHeader > div > div {
+        .tableCommon;
+        background: #F9F9F9;
+      }
+
+      .tableHeader > div > div i {
+        float: right;
+        margin-right: 10px;
+        line-height: 20px;
+        cursor: pointer;
+      }
+
+      .tableBody > div {
+        .tableCommon;
+        margin-top: -1px;
+      }
+      .modelItemTag {
+        width: 200px;
+        display: inline-block;
+        border-radius: 4px;
+        margin-right: 20px;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        background: #F9F9F9;
+        height: 26px;
+        line-height: 26px;
+        font-size: 14px;
+        box-sizing: content-box;
+        i {
+          float: right;
+          margin-right: 10px;
+          display: inline-block;
+          height: 26px;
+          line-height: 26px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .submitContainer {
+    height: 50px;
+  }
+}
+
+.modelCard {
+  .ivu-card-body {
+    overflow: hidden;
+  }
+}
+
+.modelCard:hover .ivu-card-extra a {
+  display: block !important;
+}
+
+.modelCard .ivu-card-extra a {
+  display: none;
+  transition: display 2s;
+  -moz-transition: display 2s; /* Firefox 4 */
+  -webkit-transition: display 2s; /* Safari 和 Chrome */
+  -o-transition: display 2s; /* Opera */
+}
+
+.modelListDialog {
+  .ivu-modal-header {
+    text-align: center;
+    border: none;
+  }
+  .ivu-modal-body {
+    padding: 0;
+  }
+  .ivu-modal-body ul li {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-top: 1px solid #e3e8ee;
+  }
+  //.ivu-modal-body ul li:not(:first-child) {
+  //}
+  .ivu-modal-body ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .ivu-modal-body ul li a:hover {
+    background: #F3F3F3;
+  }
+  .addNewModel {
+    i {
+      line-height: 50px;
+      font-size: 32px;
+      font-weight: 200;
+      color: #657180;
+    }
+  }
+
+  .modelNameContainer div {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modelNameContainer input {
+    border: none;
+    width: 100%;
+    height: 48px;
+    padding-left: 20px;
+  }
+}
+
+.noData {
+  .icon {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .icon i {
+    font-size: 60px;
+  }
+  .noDataMessage {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+
+.left-menu {
+  height: 500px;
+  overflow: auto;
+  //border-right: 1px solid #e9eaec;
+}
+.contractMakerRight{
+  padding:10px;
+  border-left: 1px solid #d9d9d9;
+  border-top:none;
+  //border-radius: 4px;
+}

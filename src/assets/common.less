@@ -1,0 +1,161 @@
+@import "./base.less";
+
+html, body, #app, .wrap {
+  height: 100%;
+  overflow: hidden;
+}
+#app {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  text-align: center;
+  background: #fff;
+}
+textarea {
+  resize: none;
+}
+table {
+  border-spacing: 0;
+}
+.head-right .ivu-dropdown-item{
+  padding: 0 !important;
+}
+.head-right .ivu-dropdown-item .down{
+  padding: 7px 16px;
+  display: block;
+}
+
+.head-top {
+  width: 100%;
+  height: 58px;
+  background-color: @blue;
+  border-bottom: 2px solid #0a60d7;
+  box-sizing: content-box;
+  position: relative;
+
+  .head-log{
+    float: left;
+    height: 100%;
+    margin: 0 20px;
+    width: 180px;
+    background: url("./scp-logo.png") no-repeat 50% 50%;
+    background-size: contain;
+  }
+  .menu li{
+    float: left;
+    cursor: pointer;
+    line-height: 58px;
+    color: @white;
+    font-size: 16px;
+    padding: 0 30px;
+    position: relative;
+
+    &.active:after{
+      content: '';
+      .position(absolute, 0, 0, -2px, 0);
+      border-bottom:4px solid @green;
+      background-color: rgba(255, 255, 255, .2);
+    }
+  }
+}
+
+.head-right {
+  height: 100%;
+  position: absolute;
+  right: 36px;
+  line-height: 58px;
+  color: #fff;
+  font-size: 16px;
+
+  .bell, .portrait, .drop-down{
+    float: left;
+  }
+
+  .bell{
+    background: url("./bell.png") no-repeat 50% 50%;
+    height: 100%;
+    width: 58px;
+    position: relative;
+    cursor: pointer;
+
+    .num{
+      .position(@top: 9px, @right: 9px);
+      width:18px;
+      height:18px;
+      line-height:18px;
+      font-size: 12px;
+      font-style: normal;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #ff4642;
+    }
+  }
+
+  .portrait{
+    height: 38px;
+    margin: 10px 0 0;
+    padding: 0 10px;
+    //border-left: 1px solid #7fbfff;
+
+    img{
+      width: 30px;
+      height: 30px;
+      border: 2px solid @white;
+      border-radius: 50%;
+    }
+  }
+
+  .drop-down{
+    cursor: pointer;
+  }
+
+}
+
+.head-right a.w {
+  color: #fff !important;
+}
+
+.head-right a.b {
+  color: rgb(51, 51, 51) !important;
+}
+
+.head-right a i {
+  margin-left: 10px;
+}
+.view-container {
+  box-sizing: border-box;
+  height: 90%;
+  height: -moz-calc(~"100% - 60px");
+  height: -webkit-calc(~"100% - 60px");
+  height: calc(~"100% - 60px");
+  overflow: auto;
+  width: 100%;
+}
+
+.getVerifyCode .ivu-input-group-append{
+  background-color: #2b85e4 !important;
+  border: none !important;
+  color: #fff !important;
+}
+.append-hack .ivu-input-group-append{
+  display:none;
+}
+.append-hack .ivu-input{
+  border-radius: 4px !important;
+}
+
+.ivu-carousel,
+.ivu-carousel-list,
+.ivu-carousel-track {
+  height: 100%;
+}
+.spel-textarea {
+  overflow: hidden;
+  margin: 0 !important;
+  .ivu-form-item-content {
+    margin-left: 0 !important;
+  }
+}
+.y-area-height {
+  textarea {
+    height:128px !important;
+  }
+}

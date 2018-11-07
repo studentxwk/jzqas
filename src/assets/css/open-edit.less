@@ -1,0 +1,197 @@
+a {
+  color: #657180 !important;
+}
+.openEntry {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 15px;
+  margin-bottom: 5%;
+  .openListOpt{//保存按钮
+    height: 50px;
+    line-height: 15px;
+    padding: 10px;
+    background-color:#c8def7;
+    .first-title{//保存取消按钮
+      float: left;
+      margin-right: 15px;
+    }
+  }
+  .openHeadModules{//表头
+    .optItem{
+      margin-top: 10px;
+    }
+    .openHeadData{
+      margin-top: 10px;
+      table{
+        tr{
+          line-height: 80px;
+          td{
+            width: 30%;
+            text-align: match-parent;
+            Form{
+              label{
+                text-align: right;
+                margin-right: 3%;
+                height: 30px;
+                float: left;
+                white-space:nowrap;
+              }
+            Input{
+              width: 200px;
+            }
+            }
+          }
+        }
+      }
+      .tableRowHover {
+        background: #EBF7FF;
+      }
+    }
+  }
+  .openBodyModel { //表体
+    .opt{
+      text-align: right;
+    }
+    table{
+      tr{
+        width: 90%;
+        height: 40px;
+        th{
+          width: 100px;
+
+        }
+        td{
+          Input{
+            text-align: center;
+          }
+        }
+      }
+
+    }
+  }
+}
+p{
+  height: 60px;
+  width: 100%;
+  margin-left: 0px;
+}
+
+.clear {
+  clear: both;
+}
+
+.pd20 {
+  padding: 20px;
+}
+
+.br4 {
+  border-radius: 4px;
+}
+
+.transform(@deg) {
+  transform: rotate(@deg);
+  -ms-transform: rotate(@deg); /* Internet Explorer */
+  -moz-transform: rotate(@deg); /* Firefox */
+  -webkit-transform: rotate(@deg); /* Safari 和 Chrome */
+  -o-transform: rotate(@deg); /* Opera */
+}
+
+.transition(@transition,@time) {
+  transition: @transition @time;
+  -moz-transition: @transition @time; /* Firefox 4 */
+  -webkit-transition: @transition @time; /* Safari and Chrome */
+  -o-transition: @transition @time; /* Opera */
+}
+
+.up {
+  .transform(180deg);
+}
+
+.moduleSlideUp {
+  display: none;
+}
+
+.submitContainer {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.openModule {
+  background: #fff;
+  width: 1200px;
+  margin: 0 auto 20px;
+  position: relative;
+  .pd20;
+  .br4;
+  .moduleHeader {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 18px;
+    span.extend {
+      float: right;
+      cursor: pointer;
+      .transition(all, 0.2s);
+    }
+  }
+  div.opt {
+    text-align: right;
+  }
+  ul.moduleItemList {
+    .transition(all, 2s);
+  }
+  li.moduleItem {
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    .formItemContainer {
+      display: inline-block;
+      width: 300px;
+      margin-left: 10px;
+      text-align: left;
+    }
+  }
+  table.openBodyTable {
+    //border: 1px solid #e9eaec;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    .tbHeader {
+      background: #f8f8f9;
+    }
+    tr:hover {
+      .transition(all, 0.2s);
+      .tableRowHover;
+    }
+    th, td {
+      height: 50px;
+      border: 1px solid #e9eaec;
+      cursor: pointer;
+      input {
+        width: 60%;
+      }
+
+    }
+  }
+  .tableRowHover {
+    background: #EBF7FF;
+  }
+  .openBodyTable{
+    .tr{
+      .td{
+        width: 100px;
+        align: center;
+      }
+    }
+
+  }
+}
